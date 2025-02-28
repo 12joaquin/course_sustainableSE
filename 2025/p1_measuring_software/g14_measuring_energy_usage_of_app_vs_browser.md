@@ -1,13 +1,14 @@
 ---
-author: Jeroen Janssen, Roelof van der geest, Elena Ibañez, Joaquin Cava
-title: "Energy Consumption Comparison: Web Browser vs Native Jellyfin App"
+author: Jeroen Janssen, Roelof van der Geest, Elena Ibañez, Joaquin Cava
+title: ""
 image: ""
 date: 28/02/2025
 summary: |-
- We are doing a comparison between the energy consumed by Jellyfin web browser and the native app of Jellyfin.
+    We are doing a comparison between the energy consumed by Jellyfin web browser and the native app of Jellyfin.
 ---
+
 ## Introduction
-Energy efficiency is a growing concern all over the world, and as sofware and AI develops in giant steps, it is also a concern in the software development area. As applications become more resource-intensive, understanding the energy consumption of different software configurations is essentail. In this experiment, we compare the energy consumption of streaming a small piece of a movie using the Jellyfin web browser interface versus the Jellyfin native application. By measuring the energy consumption of these two approaches, we aim to identify which method is more energy-efficient and under which circumstances.
+Energy efficiency is a growing concern all over the world, and as software and AI develops in giant steps, it is also a concern in the software development area. As applications become more resource-intensive, understanding the energy consumption of different software configurations is essential. In this experiment, we compare the energy consumption of streaming a small piece of a movie using the Jellyfin web browser interface versus the Jellyfin native application. By measuring the energy consumption of these two approaches, we aim to identify which method is more energy-efficient and under which circumstances.
 This study follows a systematic methodology to ensure unbiased and replicable energy measurements. The results of this experiment will help users and developers make informed decisions about optimizing software for energy efficiency.
 ## Methodology
 ### Experimental Setup
@@ -76,7 +77,7 @@ Plot description:
 - Total energy perspective: The browser has slightly higher total energy consumption compared to the app. Even if the browser doesn't always hit the extreme peaks, the overall consumption is higher. This suggests the browser might keep certain components active or run at a higher baseline power state. On the other hand, the app might have to do more work upfront, but then idle more efficiently, resulting in a lower median total energy usage. We think that the total energy usage could be minimized by doing the following: with respect to the browser, it could help to use an incognito window for fewer add-ons and to have a minimal environment. For app specific purposes, by reducing data processing once the playback is stable could help minimize the total energy usage. On top of that, modern GPUs can also reduce clock speeds when load is low, so dynamic clocking could be crucial. In addition, scaling down CPU frequency when full power is not needed could also help, even though this is normally done automatically.
 - Practical implications: 
     - Battery impact: On laptops, tablets, or phones, every extra joules consumed every few seconds can shorten playback time. If the browser constantly run at a higher energy consumption baseline, the battery will drain quicker over a long playback.
-    - Performance tuning: if we are aiming to minimize system power, we need to identify and remover overhead, this could be done by using profiling tools like Intel Power Gadget (Mac/Windows) or powertop (Linux) or by optimizing code, for the app we could ensure efficient video decode libraries, and for the browser we could limit background pages, or unnecessary DOM updates.
+    - Performance tuning: if we are aiming to minimize system power, we need to identify and remover overhead, this could be done by using profiling tools like Intel Power Gadget (Mac/Windows) or powertop (Linux) or by optimizing code, for the app we could ensure efficient video decode libraries, and for the browser we could limit background pages, or unecessary DOM updates.
     - User experience: the initial spikes can generate heat and noise (due to the fans trying to cool down the device). This could be fixed by making a proper thermal management and by watching the video in lower resolution.
 
 ## Limitations
