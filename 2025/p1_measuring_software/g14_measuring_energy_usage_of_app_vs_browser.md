@@ -1,10 +1,11 @@
 ---
 author: Jeroen Janssen, Roelof van der Geest, Elena Ibañez, Joaquin Cava
-title: Is Notion "Greener" on Web browser or Desktop?
-date: 27/02/2024
+author: Lucian Negru, Eleni Papadopoulou, Yang Li
+title: "Npm vs Yarn: Energy Efficiency"
+image: ""
+date: 28/02/2024
 summary: |-
-Ever wondered how much energy is consumed by some of the softwares that we use often ? We explore the energy consumption of one such software - Notion , something one might find using quite often for organising notes. 
-Primarily we see if its energy-efficient to use Notion on desktop or on Web Browser.
+  This project aimed to test which of the two most popular JavaScript package managers, npm or yarn, is more energy efficient. We have run automated experiments which install a large list of packages in isolated environments using both tools. The installation process was run under the Energi Bridge utility tool to measure the average power draw of the process for each package manager. The results showed that yarn was more consistent in its power draws throughout the 30 runs of the experiment and achieved a 4.7% lower power usage than npm. We believe these results to be practically significant, as package installation is one of the most frequent functions in software development. In our strive for a more environmentally sustainable IT sector, we ought to implement and innovate more energy-efficient systems, applications, and functionalities, and we believe yarn manages to improve upon npm and do exactly that.
 ---
 
 ## Introduction
