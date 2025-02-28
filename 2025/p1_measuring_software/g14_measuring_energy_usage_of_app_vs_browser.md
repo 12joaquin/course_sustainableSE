@@ -1,7 +1,7 @@
 ---
 author: Jeroen Janssen, Roelof van der Geest, Elena Ibañez, Joaquin Cava
-title: ""
-image: ""
+title: 
+image: 
 date: 28/02/2025
 summary: |-
 We are doing a comparison between the energy consumed by Jellyfin web browser and the native app of Jellyfin.
