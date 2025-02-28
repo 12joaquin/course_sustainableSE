@@ -1,10 +1,10 @@
 ---
 author: Jeroen Janssen, Roelof van der Geest, Elena Ibañez, Joaquin Cava
-title: 
-image: 
-date: 28/02/2025
+title: Is Notion "Greener" on Web browser or Desktop?
+date: 27/02/2024
 summary: |-
-We are doing a comparison between the energy consumed by Jellyfin web browser and the native app of Jellyfin.
+Ever wondered how much energy is consumed by some of the softwares that we use often ? We explore the energy consumption of one such software - Notion , something one might find using quite often for organising notes. 
+Primarily we see if its energy-efficient to use Notion on desktop or on Web Browser.
 ---
 
 ## Introduction
